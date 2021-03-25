@@ -2,7 +2,7 @@
 //Crea due array di numeri che hanno un numero di elementi diversi.
 //Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
 
-/*
+
 var listUno = [1, 2, 5, 8, 13, 18, 25, 34, 42, 50, 62, 84]
 var listDue = [2, 5, 6]
 console.log(`Elementi lista uno originale: ${listUno} --- n elementi:${listUno.length}`)
@@ -22,7 +22,17 @@ if (listUno.length > listDue.length){
 }
 console.log(`elementi lista uno post: ${listUno} --- n elementi:${listUno.length}`)
 console.log(`elementi lista due post: ${listDue} --- n elementi:${listDue.length}`)
-*/
+
+
+
+
+
+
+
+
+
+
+
 
 ///////////////////////////////////////Snack 4.
 //Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari
@@ -40,9 +50,16 @@ for (var i = 0; i < numInteri.length; i++) {
 console.log(somma);
 */
 
+
+
+
+
+
+
+
 /////////////////////////////////////////////////////Snack 3.
 //Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
-
+/*
 var nomi = ['giovanni', 'fabio', 'paolo', 'andrea'];
 var cognomi = ['olivieri', 'duzioni', 'forghieri', 'Rossi'];
 var lista = [];
@@ -52,3 +69,56 @@ for (var i = 0; i < nomi.length; i++) {
     lista.push(nomeCompleto);
 }
 console.log(lista);
+*/
+
+
+
+
+
+
+
+///////////////////////////////////////////////////Snack 2.
+//Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
+/*
+var numero = parseInt(prompt('Inserisci un numero'));
+
+if (numero % 2 != 0) {
+    console.log(numero + 1);
+} else {
+    console.log(numero);
+}
+*/
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////Snack 1.
+//Il software deve chiedere per 5 volte all’utente di inserire un numero.
+//Il programma stampa la somma di tutti i numeri inseriti.
+//Esegui questo programma in due versioni, con il for e con il while
+
+//FOR
+/*
+somma = 0;
+ripetizioni = 5;
+for (var i = 1; i <= ripetizioni; i++) {
+    somma += parseInt(prompt(`inserisci numero - ${i} su ${ripetizioni}`));
+}
+console.log(somma);
+*/
+
+//WHILE
+/*
+somma = 0;
+contatore = 1;
+ripetizioni = 5;
+
+while (contatore <= ripetizioni) {
+    somma += parseInt(prompt(`inserisci numero - ${contatore} su ${ripetizioni}`));
+    contatore++
+}
+console.log(somma);
+*/
