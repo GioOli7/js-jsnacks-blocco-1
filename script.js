@@ -2,6 +2,7 @@
 //Crea due array di numeri che hanno un numero di elementi diversi.
 //Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
 
+/*
 var listUno = [1, 2, 5, 8, 13, 18, 25, 34, 42, 50, 62, 84]
 var listDue = [2, 5, 6]
 console.log(`Elementi lista uno originale: ${listUno} --- n elementi:${listUno.length}`)
@@ -21,7 +22,7 @@ if (listUno.length > listDue.length){
 }
 console.log(`elementi lista uno post: ${listUno} --- n elementi:${listUno.length}`)
 console.log(`elementi lista due post: ${listDue} --- n elementi:${listDue.length}`)
-
+*/
 
 ///////////////////////////////////////Snack 4.
 //Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari
@@ -38,3 +39,16 @@ for (var i = 0; i < numInteri.length; i++) {
 }
 console.log(somma);
 */
+
+/////////////////////////////////////////////////////Snack 3.
+//Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
+
+var nomi = ['giovanni', 'fabio', 'paolo', 'andrea'];
+var cognomi = ['olivieri', 'duzioni', 'forghieri', 'Rossi'];
+var lista = [];
+
+for (var i = 0; i < nomi.length; i++) {
+    var nomeCompleto = nomi[ Math.floor(Math.random() * nomi.length) ] + ' ' + cognomi[ Math.floor(Math.random() * cognomi.length) ];
+    lista.push(nomeCompleto);
+}
+console.log(lista);
